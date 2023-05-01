@@ -1,42 +1,23 @@
-//
-//  Event.swift
-//  CalendarApp
-//
-//  Created by Adams, Kylee B. on 4/17/23.
-//
-
 import Foundation
 
-var eventList = [Event]()
+var eventsList = [Event]()
 
-class Event{
+class Event
+{
     var id: Int!
     var name: String!
     var date: Date!
     
-    func eventForDate(date: Date) -> [Event]{
+    func eventsForDate(date: Date) -> [Event]
+    {
         var daysEvents = [Event]()
-        for event in eventList{
-            if(Calendar.current.isDate(event.date, inSameDayAs: date)){
+        for event in eventsList
+        {
+            if(Calendar.current.isDate(event.date, inSameDayAs:date))
+            {
                 daysEvents.append(event)
             }
         }
         return daysEvents
     }
-    
-    
-    func eventsForDateAndTime(date: Date, hour: Int)->[Event]{
-        var daysEvents = [Event]()
-        
-        for event in eventList{
-            if(Calendar.current.isDate(event.date, inSameDayAs: date)){
-                let eventHour = CalendarHelper().hourFromDate(date: event.date)
-                if eventHour == hour{
-                    daysEvents.append(event)
-                }
-            }
-        }
-        return daysEvents
-    }
-    
 }
