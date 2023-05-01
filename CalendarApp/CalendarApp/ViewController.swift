@@ -45,6 +45,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             {
                 totalSquares.append(String(count - startingSpaces))
             }
+            
+            
             count += 1
         }
         
@@ -61,6 +63,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "calCell", for: indexPath) as! CalendarCell
         
         cell.dayOfMonth.text = totalSquares[indexPath.item]
+        
+        
+                        
+                
         
         return cell
     }

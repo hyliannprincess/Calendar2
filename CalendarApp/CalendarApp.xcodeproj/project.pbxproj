@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512389122A005D6C0068B85D /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512389112A005D6C0068B85D /* NotesViewController.swift */; };
 		51682D882A002E41005ED9C9 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51682D872A002E41005ED9C9 /* EventCell.swift */; };
 		51682D8A2A002E63005ED9C9 /* EditEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51682D892A002E63005ED9C9 /* EditEventViewController.swift */; };
 		8E459CC429EDDADF00C6F678 /* WeeklyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E459CC329EDDADF00C6F678 /* WeeklyViewController.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		512389112A005D6C0068B85D /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		51682D872A002E41005ED9C9 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		51682D892A002E63005ED9C9 /* EditEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEventViewController.swift; sourceTree = "<group>"; };
 		8E459CC329EDDADF00C6F678 /* WeeklyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				8E459CC529EDDEE000C6F678 /* Event.swift */,
 				51682D872A002E41005ED9C9 /* EventCell.swift */,
 				51682D892A002E63005ED9C9 /* EditEventViewController.swift */,
+				512389112A005D6C0068B85D /* NotesViewController.swift */,
 			);
 			path = CalendarApp;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				8ED404EF29E7642200063495 /* CalendarHelper.swift in Sources */,
 				51682D882A002E41005ED9C9 /* EventCell.swift in Sources */,
 				8ED404D629E75A4A00063495 /* AppDelegate.swift in Sources */,
+				512389122A005D6C0068B85D /* NotesViewController.swift in Sources */,
 				51682D8A2A002E63005ED9C9 /* EditEventViewController.swift in Sources */,
 				8ED404D829E75A4A00063495 /* SceneDelegate.swift in Sources */,
 				8ED404ED29E75ED100063495 /* CalendarCell.swift in Sources */,

@@ -7,7 +7,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
 {
     
     @IBOutlet weak var monthLabel: UILabel!
-    //@IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
 
@@ -46,7 +46,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         monthLabel.text = CalendarHelper().monthString(date: selectedDate)
             + " " + CalendarHelper().yearString(date: selectedDate)
         collectionView.reloadData()
-        //tableView.reloadData()
+        tableView.reloadData()
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -61,7 +61,8 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         if(date == selectedDate)
         {
-            cell.backgroundColor = UIColor.systemGreen
+            var color = UIColor(red: 0.0, green: 0.2, blue: 0.6, alpha: 0.3)
+            cell.backgroundColor = color
         }
         else
         {
@@ -76,7 +77,7 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     {
         selectedDate = totalSquares[indexPath.item]
         collectionView.reloadData()
-        //tableView.reloadData()
+        tableView.reloadData()
     }
     
     @IBAction func previousWeek(_ sender: Any)
@@ -114,6 +115,6 @@ class WeeklyViewController: UIViewController, UICollectionViewDelegate, UICollec
     override func viewDidAppear(_ animated: Bool)
     {
         super.viewDidAppear(animated)
-        //tableView.reloadData()
+        tableView.reloadData()
     }
 }
